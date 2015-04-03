@@ -1,4 +1,5 @@
 class Recipe < ActiveRecord::Base
+   belongs_to :user
     has_many :ingredients
     has_many :directions
     
@@ -13,4 +14,4 @@ class Recipe < ActiveRecord::Base
     validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 end
 
-#### 59:00 minut #####
+#### 1:00:00  #####
